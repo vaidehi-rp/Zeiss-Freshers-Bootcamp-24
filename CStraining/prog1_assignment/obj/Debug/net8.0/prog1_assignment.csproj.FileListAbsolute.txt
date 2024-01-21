@@ -1,0 +1,14 @@
+D:\CStraining\prog1_assignment\obj\Debug\net8.0\prog1_assignment.GeneratedMSBuildEditorConfig.editorconfig
+D:\CStraining\prog1_assignment\obj\Debug\net8.0\prog1_assignment.AssemblyInfoInputs.cache
+D:\CStraining\prog1_assignment\obj\Debug\net8.0\prog1_assignment.AssemblyInfo.cs
+D:\CStraining\prog1_assignment\obj\Debug\net8.0\prog1_assignment.csproj.CoreCompileInputs.cache
+D:\CStraining\prog1_assignment\bin\Debug\net8.0\prog1_assignment.exe
+D:\CStraining\prog1_assignment\bin\Debug\net8.0\prog1_assignment.deps.json
+D:\CStraining\prog1_assignment\bin\Debug\net8.0\prog1_assignment.runtimeconfig.json
+D:\CStraining\prog1_assignment\bin\Debug\net8.0\prog1_assignment.dll
+D:\CStraining\prog1_assignment\bin\Debug\net8.0\prog1_assignment.pdb
+D:\CStraining\prog1_assignment\obj\Debug\net8.0\prog1_assignment.dll
+D:\CStraining\prog1_assignment\obj\Debug\net8.0\refint\prog1_assignment.dll
+D:\CStraining\prog1_assignment\obj\Debug\net8.0\prog1_assignment.pdb
+D:\CStraining\prog1_assignment\obj\Debug\net8.0\prog1_assignment.genruntimeconfig.cache
+D:\CStraining\prog1_assignment\obj\Debug\net8.0\ref\prog1_assignment.dll
