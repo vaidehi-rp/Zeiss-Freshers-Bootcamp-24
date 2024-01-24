@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,17 +10,21 @@ namespace DoorEvent
     {
         static void Main(string[] args)
         {
-            SmartDoor door = new SmartDoor(Door.State.CLOSED);
+            Door door = new Door();
             Operator operatorInstance = new Operator(door);
 
             BuzzerAlert buzzerAlert = new BuzzerAlert(door);
-            PagerAlert pagerAlert = new PagerAlert(door);
-            AutoClose autoClose = new AutoClose(door);
+            Action<Door.State> buzzerNotifier = new Action<Door.State>(buzzerAlert.Notify);
 
-            User user = new User();
-            user.Subscribe(buzzerAlert, door);
-            user.Subscribe(pagerAlert, door);
-            user.Subscribe(autoClose, door);
+            PagerAlert pagerAlert = new PagerAlert(door);
+            Action<Door.State> pagerNotifier = new Action<Door.State>(pagerAlert.Notify);
+
+            AutoClose autoClose = new AutoClose(door);
+            Action<Door.State> autoCloseNotifier = new Action<Door.State>(autoClose.Notify);
+
+            door.Changed += buzzerNotifier;
+            door.Changed += pagerNotifier;
+            door.Changed += autoCloseNotifier;
 
             operatorInstance.OpenDoor();
 
@@ -28,16 +32,18 @@ namespace DoorEvent
             System.Timers.Timer timer = new System.Timers.Timer(20000);
             timer.Elapsed += (source, e) => {
                 // If the door is still open after 20 seconds, notify the observers
-                if (door.CurrentState == Door.State.OPENED)
+                if (door.state == Door.State.OPENED)
                 {
-                    buzzerAlert.Notify(Door.State.OPENED);
-                    pagerAlert.Notify(Door.State.OPENED);
-                    autoClose.Notify(Door.State.OPENED);
+                    buzzerNotifier(door.state);
+                    pagerNotifier(door.state);
+                    autoCloseNotifier(door.state);
                 }
             };
             timer.Start();
 
             operatorInstance.CloseDoor();
         }
+
     }
+
 }
