@@ -58,7 +58,7 @@ var show_next_tip = function () {
 The improved solution demonstrates fewer lines of code and a more human-readable approach.
 
 ## Applying This Method to Larger Problems
-The section progresses to applying the described method to a larger function involving stock transactions. The challenge is to join data from three separate database tables based on time, skipping rows with unmatched times. The Python code provided illustrates the process, but raises concerns about readability and potential issues.
+The section progresses to applying the described method to a larger function involving stock transactions. The challenge is to join data from three separate database tables based on a primary key 'time', skipping rows with unmatched times. The Python code provided illustrates the process, but raises concerns about readability and potential issues.
 
 #### Original Python Implementation
 ```python
@@ -72,7 +72,7 @@ def PrintStockTransactions():
 ```
 
 ### An English Description of the Solution
-The chapter introduces the concept of describing code solutions in plain English. A Python code example involving stock transactions is refined by extracting complex logic into a new function named `AdvanceToMatchingTime()`. The resulting code is more readable and encapsulates the details of aligning rows.
+The subsection introduces the concept of describing code solutions in plain English. A Python code example involving stock transactions is refined by extracting complex logic into a new function named `AdvanceToMatchingTime()`. The resulting code is more readable and encapsulates the details of aligning rows.
 
 #### Improved Python Implementation
 ```python
@@ -88,7 +88,7 @@ def PrintStockTransactions():
 ```
 
 ### Applying the Method Recursively
-The section explores applying the described method recursively to the AdvanceToMatchingTime() function. The improved description leads to a clearer and more elegant implementation. The code becomes simpler, with fewer tricky comparisons and generic variable names, enhancing readability.
+The subsection explores applying the described method recursively to the AdvanceToMatchingTime() function. The improved description leads to a clearer and more elegant implementation. The code becomes simpler, with fewer tricky comparisons and generic variable names, enhancing readability.
 
 ```python
 def AdvanceToMatchingTime(row_iter1, row_iter2, row_iter3):
