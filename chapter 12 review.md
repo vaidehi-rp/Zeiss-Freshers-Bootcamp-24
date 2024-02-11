@@ -71,7 +71,7 @@ def PrintStockTransactions():
         # ... (rest of the code)
 ```
 
-## An English Description of the Solution
+### An English Description of the Solution
 The chapter introduces the concept of describing code solutions in plain English. A Python code example involving stock transactions is refined by extracting complex logic into a new function named `AdvanceToMatchingTime()`. The resulting code is more readable and encapsulates the details of aligning rows.
 
 #### Improved Python Implementation
@@ -87,7 +87,7 @@ def PrintStockTransactions():
         # ... (rest of the code)
 ```
 
-## Applying the Method Recursively
+### Applying the Method Recursively
 The section explores applying the described method recursively to the AdvanceToMatchingTime() function. The improved description leads to a clearer and more elegant implementation. The code becomes simpler, with fewer tricky comparisons and generic variable names, enhancing readability.
 
 ```python
