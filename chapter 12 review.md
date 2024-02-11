@@ -1,17 +1,13 @@
 # Chapter Review: "Turning Thoughts into Code"
 
-In this chapter the authors address a fundamental challenge in programming – communicating complex ideas clearly. The chapter begins by emphasizing the importance of explaining ideas in plain English, a skill crucial for both effective communication and refining one's own understanding.
+In this chapter the authors tackle the challenge of clear communication in programming. They stress the importance of explaining ideas in plain English, advocating for code that reads like a natural language.
 
-The narrative underscores the parallel between explaining complex ideas to someone less knowledgeable and presenting code to readers. The authors advocate for writing code as if it were in plain English, making source code the primary means of explaining a program's functionality.
+The chapter introduces a simple yet powerful process:
+1. Describe code purpose in plain English.
+2. Identify key terms.
+3. Write code to match the description.
 
-The chapter introduces a straightforward process to enhance code clarity:
-1. Describe the code's purpose in plain English, as you would to a colleague.
-2. Identify key words and phrases in the description.
-3. Write the code to align with this description.
-
-The subsequent review delves into practical examples, illustrating how this process is applied to small and large code blocks. It explores the significance of understanding libraries and introduces a recursive application of the described method.
-
-The authors make a compelling case for the broader applicability of the technique beyond coding. They draw a connection to the concept of "rubber ducking," highlighting how articulating problems aloud can lead to solutions. The chapter concludes with the assertion that if an idea or problem can't be described in words, it may lack clarity or definition.
+This approach is demonstrated with practical examples, emphasizing clarity in both small and large code blocks. The authors extend the concept to broader problem-solving contexts and introduce the recursive application of the method.
 
 ## Describing Logic Clearly
 The section introduces a PHP code snippet for user authorization, emphasizing the need to describe logic in plain English. An alternative solution is presented, showcasing a simpler and more readable code structure.
